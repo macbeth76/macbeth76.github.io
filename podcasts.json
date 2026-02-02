@@ -5,5 +5,12 @@
     "description": "The podcast for professional software developers. Covers all topics in software engineering including architecture, design patterns, testing, and career development.",
     "url": "https://www.se-radio.net/",
     "addedDate": "2026-02-02"
+  },
+  {
+    "name": "AWS Podcast",
+    "host": "AWS",
+    "description": "Official AWS podcast featuring discussions on cloud architecture, best practices, new services, and customer success stories. Essential for staying current with AWS innovations.",
+    "url": "https://aws.amazon.com/podcasts/aws-podcast/",
+    "addedDate": "2026-02-02"
   }
 ]
