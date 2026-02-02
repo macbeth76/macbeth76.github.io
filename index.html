@@ -34,6 +34,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#writing">Writing</a></li>
                 <li><a href="#opensource">Open Source</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -251,6 +252,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Technical Blog</h2>
+        <p class="section-intro">Insights on platform engineering, DevOps, and cloud architecture</p>
+        <div id="blog-posts" class="blog-grid">
+            <p class="no-posts">Blog posts coming soon! Check back for articles on AWS cost optimization, platform engineering, and DevOps best practices.</p>
         </div>
     </section>
 
@@ -607,5 +616,36 @@
     <footer>
         <p>&copy; 2026 Andrew K. Stone Burger. All rights reserved.</p>
     </footer>
+    
+    <script>
+        // Load blog posts dynamically
+        async function loadBlogPosts() {
+            try {
+                const response = await fetch('blog/posts.json');
+                const posts = await response.json();
+                const blogGrid = document.getElementById('blog-posts');
+                
+                if (posts.length === 0) {
+                    return;
+                }
+                
+                blogGrid.innerHTML = posts.map(post => `
+                    <div class="blog-card">
+                        <div class="blog-date">${post.date}</div>
+                        <h3>${post.title}</h3>
+                        <div class="blog-tags">
+                            ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <p>${post.content.substring(0, 200)}...</p>
+                        <a href="blog/${post.slug}.html" class="read-more">Read More →</a>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.log('No blog posts yet');
+            }
+        }
+        
+        loadBlogPosts();
+    </script>
 </body>
 </html>
