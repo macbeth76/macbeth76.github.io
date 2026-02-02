@@ -601,55 +601,8 @@
     <section id="books">
         <h2>Recommended Reading</h2>
         <p class="section-intro">Books that have shaped my approach to software engineering and architecture</p>
-        <div class="books-grid">
-            <div class="book-card">
-                <h3>Clean Architecture</h3>
-                <p class="book-author">by Robert C. Martin</p>
-                <p>Essential guide to building maintainable software systems. Covers SOLID principles, component design, and architectural boundaries.</p>
-                <a href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164" target="_blank" class="btn-secondary">View on Amazon</a>
-            </div>
-            <div class="book-card">
-                <h3>Building Microservices</h3>
-                <p class="book-author">by Sam Newman</p>
-                <p>Comprehensive guide to designing, building, and deploying microservices. Covers service boundaries, deployment, and organizational challenges.</p>
-                <a href="https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1492034029" target="_blank" class="btn-secondary">View on Amazon</a>
-            </div>
-            <div class="book-card">
-                <h3>The DevOps Handbook</h3>
-                <p class="book-author">by Gene Kim, Jez Humble, Patrick Debois, John Willis</p>
-                <p>Practical guide to implementing DevOps practices. Essential for platform engineers building CI/CD pipelines and automation.</p>
-                <a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404" target="_blank" class="btn-secondary">View on Amazon</a>
-            </div>
-            <div class="book-card">
-                <h3>Designing Data-Intensive Applications</h3>
-                <p class="book-author">by Martin Kleppmann</p>
-                <p>Deep dive into distributed systems, databases, and data processing. Critical for understanding modern cloud architectures.</p>
-                <a href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321" target="_blank" class="btn-secondary">View on Amazon</a>
-            </div>
-            <div class="book-card">
-                <h3>Site Reliability Engineering</h3>
-                <p class="book-author">by Google</p>
-                <p>Google's approach to building and running large-scale systems. Covers monitoring, incident response, and reliability practices.</p>
-                <a href="https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X" target="_blank" class="btn-secondary">View on Amazon</a>
-            </div>
-            <div class="book-card">
-                <h3>Terraform: Up & Running</h3>
-                <p class="book-author">by Yevgeniy Brikman</p>
-                <p>Practical guide to infrastructure as code with Terraform. Essential for cloud platform engineering.</p>
-                <a href="https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1098116747" target="_blank" class="btn-secondary">View on Amazon</a>
-            </div>
-            <div class="book-card">
-                <h3>Staff Engineer: Leadership beyond the management track</h3>
-                <p class="book-author">by Will Larson</p>
-                <p>Guide to thriving as a staff+ engineer. Covers technical leadership, influence, and career growth.</p>
-                <a href="https://www.amazon.com/Staff-Engineer-Leadership-beyond-management/dp/1736417916" target="_blank" class="btn-secondary">View on Amazon</a>
-            </div>
-            <div class="book-card">
-                <h3>Effective Java</h3>
-                <p class="book-author">by Joshua Bloch</p>
-                <p>Best practices for Java development. Essential reading for any serious Java developer.</p>
-                <a href="https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997" target="_blank" class="btn-secondary">View on Amazon</a>
-            </div>
+        <div id="books-grid" class="books-grid">
+            <p class="no-books">Loading books...</p>
         </div>
     </section>
 
@@ -707,7 +660,33 @@
             }
         }
         
+        // Load book recommendations dynamically
+        async function loadBooks() {
+            try {
+                const response = await fetch('books.json');
+                const books = await response.json();
+                const booksGrid = document.getElementById('books-grid');
+                
+                if (books.length === 0) {
+                    booksGrid.innerHTML = '<p class="no-books">No book recommendations yet.</p>';
+                    return;
+                }
+                
+                booksGrid.innerHTML = books.map(book => `
+                    <div class="book-card">
+                        <h3>${book.title}</h3>
+                        <p class="book-author">by ${book.author}</p>
+                        <p>${book.description}</p>
+                        <a href="${book.amazonUrl}" target="_blank" class="btn-secondary">View on Amazon</a>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.log('Error loading books:', error);
+            }
+        }
+        
         loadBlogPosts();
+        loadBooks();
     </script>
 </body>
 </html>

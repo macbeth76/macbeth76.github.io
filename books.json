@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Clean Architecture",
+    "author": "Robert C. Martin",
+    "description": "Essential guide to building maintainable software systems. Covers SOLID principles, component design, and architectural boundaries.",
+    "amazonUrl": "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Building Microservices",
+    "author": "Sam Newman",
+    "description": "Comprehensive guide to designing, building, and deploying microservices. Covers service boundaries, deployment, and organizational challenges.",
+    "amazonUrl": "https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1492034029",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "The DevOps Handbook",
+    "author": "Gene Kim, Jez Humble, Patrick Debois, John Willis",
+    "description": "Practical guide to implementing DevOps practices. Essential for platform engineers building CI/CD pipelines and automation.",
+    "amazonUrl": "https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "description": "Deep dive into distributed systems, databases, and data processing. Critical for understanding modern cloud architectures.",
+    "amazonUrl": "https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Site Reliability Engineering",
+    "author": "Google",
+    "description": "Google's approach to building and running large-scale systems. Covers monitoring, incident response, and reliability practices.",
+    "amazonUrl": "https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Terraform: Up & Running",
+    "author": "Yevgeniy Brikman",
+    "description": "Practical guide to infrastructure as code with Terraform. Essential for cloud platform engineering.",
+    "amazonUrl": "https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1098116747",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Staff Engineer: Leadership beyond the management track",
+    "author": "Will Larson",
+    "description": "Guide to thriving as a staff+ engineer. Covers technical leadership, influence, and career growth.",
+    "amazonUrl": "https://www.amazon.com/Staff-Engineer-Leadership-beyond-management/dp/1736417916",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Effective Java",
+    "author": "Joshua Bloch",
+    "description": "Best practices for Java development. Essential reading for any serious Java developer.",
+    "amazonUrl": "https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997",
+    "addedDate": "2026-02-02"
+  }
+]
