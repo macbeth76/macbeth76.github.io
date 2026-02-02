@@ -606,6 +606,14 @@
         </div>
     </section>
 
+    <section id="podcasts">
+        <h2>Recommended Podcasts</h2>
+        <p class="section-intro">Podcasts that keep me updated on software engineering trends and best practices</p>
+        <div id="podcasts-grid" class="podcasts-grid">
+            <p class="no-podcasts">Loading podcasts...</p>
+        </div>
+    </section>
+
     <section id="contact">
         <h2>Get In Touch</h2>
         <div class="contact-grid">
@@ -685,8 +693,34 @@
             }
         }
         
+        // Load podcast recommendations dynamically
+        async function loadPodcasts() {
+            try {
+                const response = await fetch('podcasts.json');
+                const podcasts = await response.json();
+                const podcastsGrid = document.getElementById('podcasts-grid');
+                
+                if (podcasts.length === 0) {
+                    podcastsGrid.innerHTML = '<p class="no-podcasts">No podcast recommendations yet.</p>';
+                    return;
+                }
+                
+                podcastsGrid.innerHTML = podcasts.map(podcast => `
+                    <div class="podcast-card">
+                        <h3>${podcast.name}</h3>
+                        <p class="podcast-host">Hosted by ${podcast.host}</p>
+                        <p>${podcast.description}</p>
+                        <a href="${podcast.url}" target="_blank" class="btn-secondary">Listen Now</a>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.log('Error loading podcasts:', error);
+            }
+        }
+        
         loadBlogPosts();
         loadBooks();
+        loadPodcasts();
     </script>
 </body>
 </html>
