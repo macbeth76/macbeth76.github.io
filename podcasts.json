@@ -12,5 +12,12 @@
     "description": "Official AWS podcast featuring discussions on cloud architecture, best practices, new services, and customer success stories. Essential for staying current with AWS innovations.",
     "url": "https://aws.amazon.com/podcasts/aws-podcast/",
     "addedDate": "2026-02-02"
+  },
+  {
+    "name": "Ruby Rogues",
+    "host": "Charles Max Wood and Panel",
+    "description": "Weekly discussion on Ruby, Rails, software development, and agile practices. Features expert developers discussing best practices, testing, architecture, and career development.",
+    "url": "https://topenddevs.com/podcasts/ruby-rogues",
+    "addedDate": "2026-02-02"
   }
 ]
