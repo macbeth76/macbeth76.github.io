@@ -82,5 +82,12 @@
     "description": "Comprehensive Java programming guide. From basics to advanced concepts with hands-on examples.",
     "amazonUrl": "https://www.amazon.com/Java-How-Program-Early-Objects/dp/0134743350",
     "addedDate": "2026-02-02"
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt, David Thomas",
+    "description": "Your journey to mastery. Timeless lessons on software craftsmanship, from code organization to career development. Essential reading for every developer.",
+    "amazonUrl": "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052",
+    "addedDate": "2026-02-02"
   }
 ]
