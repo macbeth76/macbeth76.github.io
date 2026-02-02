@@ -54,5 +54,33 @@
     "description": "Best practices for Java development. Essential reading for any serious Java developer.",
     "amazonUrl": "https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997",
     "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship. Teaches how to write code that is easy to read, understand, and maintain.",
+    "amazonUrl": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Head First Design Patterns",
+    "author": "Eric Freeman, Elisabeth Robson",
+    "description": "A brain-friendly guide to design patterns in Java. Makes complex patterns easy to understand with visual examples.",
+    "amazonUrl": "https://www.amazon.com/Head-First-Design-Patterns-Object-Oriented/dp/149207800X",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Deitel & Deitel C++",
+    "author": "Paul Deitel, Harvey Deitel",
+    "description": "Comprehensive introduction to C++ programming. Covers fundamentals through advanced topics with clear examples.",
+    "amazonUrl": "https://www.amazon.com/How-Program-10th-Paul-Deitel/dp/0134448235",
+    "addedDate": "2026-02-02"
+  },
+  {
+    "title": "Deitel & Deitel Java",
+    "author": "Paul Deitel, Harvey Deitel",
+    "description": "Comprehensive Java programming guide. From basics to advanced concepts with hands-on examples.",
+    "amazonUrl": "https://www.amazon.com/Java-How-Program-Early-Objects/dp/0134743350",
+    "addedDate": "2026-02-02"
   }
 ]
