@@ -179,76 +179,83 @@
             </div>
             <div class="case-study-card">
                 <div class="case-study-header">
-                    <h3>Cloud Cost Optimization Initiative</h3>
-                    <span class="impact-badge">70% Cost Reduction</span>
+                    <h3>AWS Infrastructure Monitoring API</h3>
+                    <span class="impact-badge">300+ Resources | 75% Faster Response</span>
                 </div>
                 <div class="case-study-content">
                     <div class="challenge">
                         <h4>Challenge</h4>
-                        <p>Infrastructure costs were growing unsustainably. Needed to reduce spend while maintaining or improving performance and reliability for production workloads.</p>
+                        <p>Operations team needed unified visibility across 300+ AWS resources (22 Auto Scaling Groups, Lambda functions, SQS queues, ALB/NLB, RDS Aurora clusters) spread across multiple environments. Manual monitoring was time-consuming and incident response was slow.</p>
                     </div>
                     <div class="solution">
                         <h4>Solution & Architecture</h4>
-                        <p>Led comprehensive cloud modernization initiative:</p>
+                        <p>Created comprehensive CloudWatch monitoring REST API in Java Micronaut:</p>
                         <ul>
-                            <li>Migrated from EC2 to ECS Fargate for better resource utilization</li>
-                            <li>Implemented Spot instances for non-critical workloads</li>
-                            <li>Right-sized resources based on actual usage patterns</li>
-                            <li>Automated scaling policies to match demand</li>
+                            <li>Real-time monitoring of 300+ AWS resources across all environments</li>
+                            <li>Automated PagerDuty integration with Lambda forwarder</li>
+                            <li>Multi-environment support (dev/staging/prod) with environment-specific thresholds</li>
+                            <li>OpenAPI documentation for easy integration</li>
+                            <li>Real-time deployment status monitoring</li>
                         </ul>
                     </div>
                     <div class="impact">
                         <h4>Business Impact</h4>
                         <ul>
-                            <li>Reduced infrastructure costs by 70% ($XXXk annual savings)</li>
-                            <li>Improved deployment velocity by 60%</li>
-                            <li>Maintained 99.9% uptime SLA</li>
-                            <li>Created cost optimization playbook for organization</li>
+                            <li>Reduced incident response time by 75%</li>
+                            <li>Unified monitoring across 22 Auto Scaling Groups and dozens of services</li>
+                            <li>Automated alerting eliminated manual monitoring overhead</li>
+                            <li>Became critical operational tool for entire platform team</li>
                         </ul>
                     </div>
                     <div class="tech-tags">
-                        <span>AWS</span>
-                        <span>ECS Fargate</span>
-                        <span>Cost Optimization</span>
-                        <span>Architecture</span>
+                        <span>Java Micronaut</span>
+                        <span>CloudWatch</span>
+                        <span>PagerDuty</span>
+                        <span>REST API</span>
+                        <span>Lambda</span>
                     </div>
                 </div>
             </div>
             <div class="case-study-card">
                 <div class="case-study-header">
-                    <h3>HTTP-Based MCP Automation Server</h3>
-                    <span class="impact-badge">70% Cost Reduction via Spot Instances</span>
+                    <h3>Core Microservices Platform (6 Services)</h3>
+                    <span class="impact-badge">1,500+ Commits | 100+ Releases</span>
                 </div>
                 <div class="case-study-content">
                     <div class="challenge">
                         <h4>Challenge</h4>
-                        <p>Needed secure, scalable MCP server for automation workflows including webhook triggers, screenshot analysis, video creation, and AI-enhanced processing. Required enterprise-grade authentication and cost-effective deployment.</p>
+                        <p>Enterprise data integration platform needed scalable, secure microservices architecture to handle complex business rules, real-time data ingestion, transaction processing, and change data capture for Fortune 500 clients.</p>
                     </div>
                     <div class="solution">
                         <h4>Solution & Architecture</h4>
-                        <p>Built HTTP-based MCP server with Java/Javalin featuring:</p>
+                        <p>Architected and developed 6 production microservices using Java Micronaut 4.x:</p>
                         <ul>
-                            <li>OAuth 2.0 + PKCE authentication for secure access</li>
-                            <li>Deployed on ECS Fargate Spot reducing costs 70%</li>
-                            <li>Terraform IaC with GitHub OIDC for keyless deployments</li>
-                            <li>Webhook integration for event-driven automation</li>
+                            <li>Rules processing engine for complex business logic</li>
+                            <li>Real-time data ingestion services with validation</li>
+                            <li>Transaction processing with ACID guarantees</li>
+                            <li>File upload handling with S3 integration</li>
+                            <li>Change data capture (CDC) for system synchronization</li>
+                            <li>AWS X-Ray distributed tracing for observability</li>
+                            <li>OWASP security compliance across all services</li>
                         </ul>
                     </div>
                     <div class="impact">
                         <h4>Business Impact</h4>
                         <ul>
-                            <li>Reduced infrastructure costs by 70% using Spot instances</li>
-                            <li>Eliminated static AWS credentials with OIDC</li>
-                            <li>Enabled secure automation workflows</li>
-                            <li>Scalable architecture handling variable workloads</li>
+                            <li>100+ production releases with zero major incidents</li>
+                            <li>Platform serves Fortune 500 clients in Healthcare, Defense, Financial Services</li>
+                            <li>Maintained 99.9% uptime SLA</li>
+                            <li>1,500+ commits over 2 years showing sustained development</li>
+                            <li>Set architecture patterns adopted across organization</li>
                         </ul>
                     </div>
                     <div class="tech-tags">
                         <span>Java</span>
-                        <span>Javalin</span>
-                        <span>OAuth 2.0</span>
-                        <span>ECS Fargate Spot</span>
-                        <span>Terraform</span>
+                        <span>Micronaut</span>
+                        <span>PostgreSQL</span>
+                        <span>AWS</span>
+                        <span>X-Ray</span>
+                        <span>OWASP</span>
                     </div>
                 </div>
             </div>
@@ -486,6 +493,33 @@
         <h2>Additional Projects</h2>
         <div class="project-grid">
             <div class="project-card">
+                <h3>Cloud Cost Optimization Initiative</h3>
+                <p>Led comprehensive cloud modernization reducing infrastructure costs 70% through ECS Fargate migration, Spot instances, right-sizing, and automated scaling. Improved deployment velocity 60% while maintaining 99.9% uptime SLA. Created cost optimization playbook adopted organization-wide.</p>
+                <div class="project-meta">
+                    <span>Team: Platform team</span>
+                    <span>Scope: Organization-wide initiative</span>
+                </div>
+                <div class="tech-tags">
+                    <span>AWS</span>
+                    <span>ECS Fargate</span>
+                    <span>Cost Optimization</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>HTTP-Based MCP Automation Server</h3>
+                <p>Built secure MCP server with OAuth 2.0 + PKCE authentication using Java/Javalin. Deployed on ECS Fargate Spot reducing costs 70%. Terraform IaC with GitHub OIDC for keyless deployments. Webhook integration for event-driven automation workflows.</p>
+                <div class="project-meta">
+                    <span>Team: 1 engineer</span>
+                    <span>Scope: Production automation platform</span>
+                </div>
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>OAuth 2.0</span>
+                    <span>ECS Fargate Spot</span>
+                    <span>Terraform</span>
+                </div>
+            </div>
+            <div class="project-card">
                 <h3>Exception Monitoring & Alerting System</h3>
                 <p>Java-based exception detection and alerting system for distributed microservices. Monitors application logs across multiple services for exceptions and triggers automated notifications. Integrated with incident management for rapid response.</p>
                 <div class="project-meta">
@@ -497,20 +531,6 @@
                     <span>CloudWatch</span>
                     <span>Lambda</span>
                     <span>Monitoring</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Birdwatcher Monitoring Platform</h3>
-                <p>Created CloudWatch monitoring REST API in Java Micronaut tracking 300+ AWS resources (22 ASGs, Lambda, SQS, ALB/NLB, RDS Aurora). Automated PagerDuty integration reduced incident response time 75%. Provides real-time deployment status monitoring with OpenAPI documentation.</p>
-                <div class="project-meta">
-                    <span>Team: 1 engineer</span>
-                    <span>Scope: Production monitoring across all environments</span>
-                </div>
-                <div class="tech-tags">
-                    <span>Java Micronaut</span>
-                    <span>CloudWatch</span>
-                    <span>PagerDuty</span>
-                    <span>REST API</span>
                 </div>
             </div>
             <div class="project-card">
