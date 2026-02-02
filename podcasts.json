@@ -14,10 +14,10 @@
     "addedDate": "2026-02-02"
   },
   {
-    "name": "Ruby Rogues",
-    "host": "Charles Max Wood and Panel",
-    "description": "Weekly discussion on Ruby, Rails, software development, and agile practices. Features expert developers discussing best practices, testing, architecture, and career development.",
-    "url": "https://topenddevs.com/podcasts/ruby-rogues",
+    "name": "This Agile Life",
+    "host": "Various Hosts",
+    "description": "Deep discussions on Extreme Programming (XP), agile methodologies, and software craftsmanship. Features practitioners sharing real-world experiences with XP practices, pair programming, TDD, and agile transformation.",
+    "url": "https://www.thisagilelife.com/",
     "addedDate": "2026-02-02"
   }
 ]
