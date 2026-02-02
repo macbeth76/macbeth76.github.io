@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew K. Stone Burger - Principal Platform Architect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Andrew K. Stone Burger</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#opensource">Open Source</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Andrew Stone Burger" class="profile-img">
+            <h2>Principal Platform Architect</h2>
+            <p>Java & AWS Expert | DevOps Leader | 30 Years in Technology</p>
+            <div class="hero-links">
+                <a href="mailto:drewstoneburger@gmail.com" class="btn">Email</a>
+                <a href="https://linkedin.com/in/drewstoneburger" class="btn" target="_blank">LinkedIn</a>
+                <a href="https://github.com/macbeth76" class="btn" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Versatile engineering leader with nearly 30 years in technology solving complex problems across the full technology stack. Expert in Java (Micronaut, Spring Boot) and AWS cloud architecture with a passion for building elegant, scalable solutions.</p>
+        <p>Architected production systems spanning AI integrations, real-time data platforms, monitoring tools, and deployment automation. Deep experience in regulated environments including Healthcare (HIPAA), Defense (DoD/NIST 800-171), and Financial Services. Known for tackling any technical challenge—from low-level systems programming to cloud infrastructure to AI/ML integration.</p>
+        <div class="highlights">
+            <div class="highlight-item">
+                <h3>70%</h3>
+                <p>Infrastructure Cost Reduction</p>
+            </div>
+            <div class="highlight-item">
+                <h3>60%</h3>
+                <p>Deployment Velocity Improvement</p>
+            </div>
+            <div class="highlight-item">
+                <h3>75%</h3>
+                <p>Faster Incident Response</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise">
+        <h2>Technical Expertise</h2>
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <h3>Languages & Frameworks</h3>
+                <p>Java 17, Micronaut, Spring Boot, Kotlin, Python, Bash, SQL, GraphQL, REST APIs</p>
+            </div>
+            <div class="expertise-card">
+                <h3>AWS Cloud</h3>
+                <p>ECS/Fargate, Lambda, API Gateway, Aurora/RDS, DynamoDB, S3, SQS/SNS, CloudWatch, Bedrock, Textract, Comprehend</p>
+            </div>
+            <div class="expertise-card">
+                <h3>DevOps & IaC</h3>
+                <p>Terraform, Ansible, CloudFormation, GitHub Actions, Jenkins, Docker, GitOps, GitHub OIDC</p>
+            </div>
+            <div class="expertise-card">
+                <h3>Platform Engineering</h3>
+                <p>Blue/Green Deployments, Service Mesh, Observability, Cost Optimization, Internal Developer Platforms, SRE</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-studies">
+        <h2>Case Studies</h2>
+        <p class="section-intro">Deep dives into complex technical challenges, architectural decisions, and measurable business impact.</p>
+        <div class="case-study-grid">
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <h3>Enterprise MCP Server: AI Integration Platform</h3>
+                    <span class="impact-badge">74% Test Coverage | Zero Violations</span>
+                </div>
+                <div class="case-study-content">
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>Enterprise clients needed seamless integration with AWS AI services (Bedrock, Textract, Comprehend) through a standardized Model Context Protocol interface. Required zero-downtime deployment and enterprise-grade security.</p>
+                    </div>
+                    <div class="solution">
+                        <h4>Solution & Architecture</h4>
+                        <p>Architected Java-based MCP server deployed on ECS Fargate with:</p>
+                        <ul>
+                            <li>GitHub OIDC authentication for secure CI/CD pipeline</li>
+                            <li>Terraform IaC for reproducible infrastructure</li>
+                            <li>Comprehensive testing strategy achieving 74% coverage</li>
+                            <li>PMD/Checkstyle integration for code quality enforcement</li>
+                        </ul>
+                    </div>
+                    <div class="impact">
+                        <h4>Business Impact</h4>
+                        <ul>
+                            <li>Proof of concept validated enterprise AI integration approach</li>
+                            <li>Zero production incidents during POC phase</li>
+                            <li>Reduced integration time from weeks to days</li>
+                            <li>Set new quality standards for team (adopted org-wide)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Java</span>
+                        <span>AWS Bedrock</span>
+                        <span>ECS Fargate</span>
+                        <span>Terraform</span>
+                        <span>GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <h3>Starling DevOps Platform: 129-Role Automation Framework</h3>
+                    <span class="impact-badge">80% Fewer Failures | 60% Faster Provisioning</span>
+                </div>
+                <div class="case-study-content">
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>Manual deployment processes across 22+ microservices led to frequent failures, long provisioning times, and inconsistent environments. Team needed blue/green deployment capability without downtime.</p>
+                    </div>
+                    <div class="solution">
+                        <h4>Solution & Architecture</h4>
+                        <p>Developed comprehensive Ansible automation framework with Java CLI wrapper:</p>
+                        <ul>
+                            <li>129 reusable Ansible roles covering all deployment scenarios</li>
+                            <li>Blue/green deployment orchestration for zero-downtime releases</li>
+                            <li>Environment-agnostic configuration management</li>
+                            <li>Automated rollback capabilities</li>
+                        </ul>
+                    </div>
+                    <div class="impact">
+                        <h4>Business Impact</h4>
+                        <ul>
+                            <li>Reduced deployment failures by 80%</li>
+                            <li>Cut provisioning time by 60% (hours to minutes)</li>
+                            <li>Enabled 3x more frequent releases</li>
+                            <li>Framework adopted across all product lines</li>
+                        </ul>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Ansible</span>
+                        <span>Java</span>
+                        <span>Blue/Green</span>
+                        <span>AWS</span>
+                        <span>Automation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <h3>Cloud Cost Optimization Initiative</h3>
+                    <span class="impact-badge">70% Cost Reduction</span>
+                </div>
+                <div class="case-study-content">
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>Infrastructure costs were growing unsustainably. Needed to reduce spend while maintaining or improving performance and reliability for production workloads.</p>
+                    </div>
+                    <div class="solution">
+                        <h4>Solution & Architecture</h4>
+                        <p>Led comprehensive cloud modernization initiative:</p>
+                        <ul>
+                            <li>Migrated from EC2 to ECS Fargate for better resource utilization</li>
+                            <li>Implemented Spot instances for non-critical workloads</li>
+                            <li>Right-sized resources based on actual usage patterns</li>
+                            <li>Automated scaling policies to match demand</li>
+                        </ul>
+                    </div>
+                    <div class="impact">
+                        <h4>Business Impact</h4>
+                        <ul>
+                            <li>Reduced infrastructure costs by 70% ($XXXk annual savings)</li>
+                            <li>Improved deployment velocity by 60%</li>
+                            <li>Maintained 99.9% uptime SLA</li>
+                            <li>Created cost optimization playbook for organization</li>
+                        </ul>
+                    </div>
+                    <div class="tech-tags">
+                        <span>AWS</span>
+                        <span>ECS Fargate</span>
+                        <span>Cost Optimization</span>
+                        <span>Architecture</span>
+                    </div>
+                </div>
+            </div>
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <h3>HTTP-Based MCP Automation Server</h3>
+                    <span class="impact-badge">70% Cost Reduction via Spot Instances</span>
+                </div>
+                <div class="case-study-content">
+                    <div class="challenge">
+                        <h4>Challenge</h4>
+                        <p>Needed secure, scalable MCP server for automation workflows including webhook triggers, screenshot analysis, video creation, and AI-enhanced processing. Required enterprise-grade authentication and cost-effective deployment.</p>
+                    </div>
+                    <div class="solution">
+                        <h4>Solution & Architecture</h4>
+                        <p>Built HTTP-based MCP server with Java/Javalin featuring:</p>
+                        <ul>
+                            <li>OAuth 2.0 + PKCE authentication for secure access</li>
+                            <li>Deployed on ECS Fargate Spot reducing costs 70%</li>
+                            <li>Terraform IaC with GitHub OIDC for keyless deployments</li>
+                            <li>Webhook integration for event-driven automation</li>
+                        </ul>
+                    </div>
+                    <div class="impact">
+                        <h4>Business Impact</h4>
+                        <ul>
+                            <li>Reduced infrastructure costs by 70% using Spot instances</li>
+                            <li>Eliminated static AWS credentials with OIDC</li>
+                            <li>Enabled secure automation workflows</li>
+                            <li>Scalable architecture handling variable workloads</li>
+                        </ul>
+                    </div>
+                    <div class="tech-tags">
+                        <span>Java</span>
+                        <span>Javalin</span>
+                        <span>OAuth 2.0</span>
+                        <span>ECS Fargate Spot</span>
+                        <span>Terraform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="writing">
+        <h2>Technical Writing & Thought Leadership</h2>
+        <p class="section-intro">Sharing insights on platform engineering, DevOps, and cloud architecture.</p>
+        <div class="writing-grid">
+            <div class="writing-card">
+                <h3>DevOps Training Program</h3>
+                <p>Authored 25+ comprehensive guides covering deployment procedures, infrastructure management, monitoring tools, and operational excellence. Adopted as organizational training standards.</p>
+                <span class="writing-meta">Internal Documentation | 2020-Present</span>
+            </div>
+            <div class="writing-card">
+                <h3>Platform Engineering Best Practices</h3>
+                <p>Technical articles on building internal developer platforms, cost optimization strategies, and blue/green deployment patterns.</p>
+                <span class="writing-meta">Coming Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="opensource">
+        <h2>Open Source & Community</h2>
+        <p class="section-intro">Contributing to the developer community through open source projects.</p>
+        <div class="opensource-grid">
+            <div class="opensource-card">
+                <h3>GitHub Activity</h3>
+                <p>Active contributor with focus on Java, AWS, and DevOps tooling. Check out my pinned repositories for examples of production-quality code.</p>
+                <a href="https://github.com/macbeth76" class="btn-secondary" target="_blank">View GitHub Profile</a>
+            </div>
+            <div class="opensource-card">
+                <h3>FIRST Robotics Mentorship</h3>
+                <p>Programming mentor and Field Technical Advisor at regional competitions since 2015. Founded local STEM initiatives supporting FLL and FTC teams.</p>
+                <span class="writing-meta">2015 - Present</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Recommendations</h2>
+        <p class="section-intro">What colleagues and leadership say about working with me.</p>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Andrew is an excellent software developer and problem solver. For my program team, Andrew not only administered and integrated code from half a dozen developers (no small feat!), he also would discuss and mock up new ideas all on his own. An 'above and beyond' mindset!"</p>
+                <div class="testimonial-author">
+                    <strong>Anthony Ford</strong>
+                    <span>Counsel, Privacy, Information Security & AI at Sony Corporation of America</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Andrew is a well balanced software engineer with both broad and deep skills in languages, patterns, tools, utilities and best practices. He exceeds expectations going above and beyond what is asked for especially in leadership situations."</p>
+                <div class="testimonial-author">
+                    <strong>Ronald Jamerson</strong>
+                    <span>Lead Integration Consultant at Leveraging Technology</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"I've worked with Andrew on several projects, and he has always proven to be the resource willing to go the extra mile to not just develop a solution, but to research and deliver the best solution. His dedication and selflessness in pursuing his research is highly commendable."</p>
+                <div class="testimonial-author">
+                    <strong>Chad Hockenberger</strong>
+                    <span>Software Engineer at Rensselaer Polytechnic Institute</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Andrew is a brilliant, energetic software engineer committed to his work. His work in the developers 'Community of Excellence' (COE) demonstrates his enthusiasm to go above and beyond his expected duties. Andrews contributions to our corporate wiki is was highly valued and sets the benchmark as an example for others to follow."</p>
+                <div class="testimonial-author">
+                    <strong>Michael Axelrod</strong>
+                    <span>System Architect at Eagleview</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Andrew is a thoughtful engineer who pays close attention to detail and supporting his customer. I've always found him to be enjoyable to work with and always pleasant and straight forward. I think he's a good addition to any team and endeavors to make his team successful."</p>
+                <div class="testimonial-author">
+                    <strong>William Gates</strong>
+                    <span>Chief Enterprise Architect | Strategic Technology Leader</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Andrew is a developer who carefully crafts solutions, while taking into account their impact going forward. He is both professional and personable. His attitude and approach make working with him very easy."</p>
+                <div class="testimonial-author">
+                    <strong>Earnest Chestnut Jr.</strong>
+                    <span>Senior Software Engineer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <h3>CompTIA Security+</h3>
+                <p>Credential ID: BY13PCZJ3H4EY2TP</p>
+            </div>
+            <div class="cert-card">
+                <h3>CompTIA Linux+ / LPIC-1</h3>
+                <p>Credential ID: XPCV75MCTCB4198H</p>
+            </div>
+            <div class="cert-card">
+                <h3>Certified ScrumMaster (CSM)</h3>
+                <p>Agile project management certification</p>
+            </div>
+            <div class="cert-card">
+                <h3>Novell Certified Linux Administrator</h3>
+                <p>CLA certification</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Additional Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Exception Monitoring & Alerting System</h3>
+                <p>Java-based exception detection and alerting system for distributed microservices. Monitors application logs across multiple services for exceptions and triggers automated notifications. Integrated with incident management for rapid response.</p>
+                <div class="project-meta">
+                    <span>Team: 1 engineer</span>
+                    <span>Scope: Multi-service monitoring</span>
+                </div>
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>CloudWatch</span>
+                    <span>Lambda</span>
+                    <span>Monitoring</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Birdwatcher Monitoring Platform</h3>
+                <p>Created CloudWatch monitoring REST API in Java Micronaut tracking 300+ AWS resources (22 ASGs, Lambda, SQS, ALB/NLB, RDS Aurora). Automated PagerDuty integration reduced incident response time 75%. Provides real-time deployment status monitoring with OpenAPI documentation.</p>
+                <div class="project-meta">
+                    <span>Team: 1 engineer</span>
+                    <span>Scope: Production monitoring across all environments</span>
+                </div>
+                <div class="tech-tags">
+                    <span>Java Micronaut</span>
+                    <span>CloudWatch</span>
+                    <span>PagerDuty</span>
+                    <span>REST API</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Custom Adapter Development (22+ Adapters)</h3>
+                <p>Built 22+ integration adapters for enterprise data integration platform: Amazon Selling Partner, FedEx, Microsoft Graph/365, Confluence, Slack, AWS services (SNS, CloudWatch, Secrets Manager). Migrated adapter SDK from Maven/Ant to Gradle. Enabled enterprise clients to integrate with critical business systems.</p>
+                <div class="project-meta">
+                    <span>Team: 2-3 engineers</span>
+                    <span>Scope: 60+ commits across multiple repositories</span>
+                </div>
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>Integration</span>
+                    <span>APIs</span>
+                    <span>Gradle</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>RGATE Distributed RF Collection System</h3>
+                <p>Architected distributed RF collection system using Java, Spring Boot, ZeroMQ for DARPA and Air Force Research Laboratory. Handled offline/online data collection in mobile defense environments. Led agile development team delivering mission-critical software.</p>
+                <div class="project-meta">
+                    <span>Team: 4-6 engineers</span>
+                    <span>Scope: Defense/DARPA project</span>
+                </div>
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>ZeroMQ</span>
+                    <span>Defense</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Core Microservices Platform (6 Services)</h3>
+                <p>Backend microservices for enterprise data integration platform using Java Micronaut 4.x. Includes rules processing engine, data ingestion, transaction processing, file upload handling, and change data capture. 100+ production releases with AWS X-Ray tracing and OWASP security compliance.</p>
+                <div class="project-meta">
+                    <span>Team: 3-5 engineers</span>
+                    <span>Scope: 1,500+ commits, 2024-2026</span>
+                </div>
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>Micronaut</span>
+                    <span>PostgreSQL</span>
+                    <span>AWS</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>AI/ML Integration Services</h3>
+                <p>AI-powered backend services using AWS Bedrock and Comprehend. Address matching/normalization using LLMs, NLP-based data processing. Migrated from Comprehend to Bedrock for improved accuracy with AI prompting.</p>
+                <div class="project-meta">
+                    <span>Team: 2 engineers</span>
+                    <span>Scope: 40+ commits across 3 projects</span>
+                </div>
+                <div class="tech-tags">
+                    <span>Java</span>
+                    <span>AWS Bedrock</span>
+                    <span>AI/ML</span>
+                    <span>Lambda</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Project Templates & Standards</h3>
+                <p>Created standardized project templates for team use: backend service template, Lambda function template, CI/CD pipeline templates. Integrated quality tools (SpotBugs, PMD, Checkstyle) with pre-commit hooks. Adopted across organization for consistent code quality.</p>
+                <div class="project-meta">
+                    <span>Team: 1 engineer</span>
+                    <span>Scope: 190+ commits, org-wide adoption</span>
+                </div>
+                <div class="tech-tags">
+                    <span>Micronaut</span>
+                    <span>Gradle</span>
+                    <span>GitHub Actions</span>
+                    <span>Standards</span>
+                </div>
+            </div>
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Principal Platform Architect & DevOps Lead</h3>
+            <p class="company">Saison Technology International (HULFT) | 2020 – Present</p>
+            <p>Own platform strategy and cloud architecture for enterprise data integration products. Lead technical direction for Fortune 500 clients in Healthcare, Defense, and Financial Services.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Senior Software Engineer IV / Information Security Officer</h3>
+            <p class="company">Andro Computational Solutions | 2014 – 2020</p>
+            <p>Led agile development teams delivering mission-critical software for DARPA and Air Force Research Laboratory. Dual role as Information Security Officer ensuring DoD compliance.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Software Engineer III</h3>
+            <p class="company">Exelis (now L3Harris Technologies) | 2008 – 2014</p>
+            <p>Agile developer on defense and intelligence applications. Pioneered CI/CD adoption and test-driven development practices.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <a href="mailto:drewstoneburger@gmail.com">drewstoneburger@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <a href="tel:919-576-7885">919-576-7885</a>
+            </div>
+            <div class="contact-item">
+                <h3>Location</h3>
+                <p>Garner, NC</p>
+            </div>
+            <div class="contact-item">
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/drewstoneburger" target="_blank">linkedin.com/in/drewstoneburger</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Andrew K. Stone Burger. All rights reserved.</p>
+    </footer>
+</body>
+</html>
